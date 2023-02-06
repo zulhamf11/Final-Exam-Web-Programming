@@ -15,9 +15,9 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Role</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">@lang('public.name')</th>
+                        <th scope="col">@lang('public.role')</th>
+                        <th scope="col">@lang('public.action')</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,9 +27,10 @@
                             <td>{{ $item->first_name }} {{ $item->last_name }}</td>
                             <td>{{ $item->role }}</td>
                             <td>
-                                <a href="/showdata/{{ $item->id }}" type="button" class="btn btn-info">Update
-                                    Role</a>
-                                <a href="/deletedata/{{ $item->id }}" type="button" class="btn btn-danger">Delete</a>
+                                <a href="/showdata/{{ $item->id }}" type="button"
+                                    class="btn btn-info">@lang('public.updaterole')</a>
+                                <a href="/deletedata/{{ $item->id }}" type="button"
+                                    class="btn btn-danger">@lang('public.delete')</a>
                             </td>
 
                         </tr>

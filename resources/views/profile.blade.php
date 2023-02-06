@@ -11,7 +11,7 @@
                 @endif
                 <div class="col-md-4 mb-5" style="margin-top: 50px; margin-bottom: auto;">
                     <div class="card">
-                        <h4 class="card-header text-center bg-warning">Profile</h4>
+                        <h4 class="card-header text-center bg-warning">@lang('public.profile')</h4>
                         <img src="" class="card-img-top" alt="...">
                         <div class="card-body">
 
@@ -20,7 +20,7 @@
 
                                 {{-- First name --}}
                                 <div class="form-group mb-3">
-                                    <label for="first_name" class="mb-2"> First Name </label>
+                                    <label for="first_name" class="mb-2"> @lang('public.firstname') </label>
                                     <input type="text" placeholder="Enter Your Name" id="first_name"
                                         class="form-control @error('first_name') is-invalid @enderror" name="first_name"
                                         value="{{ Illuminate\Support\Facades\Auth::user()->first_name }}" required
@@ -35,7 +35,7 @@
 
                                 {{-- last name --}}
                                 <div class="form-group mb-3">
-                                    <label for="last_name" class="mb-2"> Last Name </label>
+                                    <label for="last_name" class="mb-2"> @lang('public.lastname') </label>
                                     <input type="text" placeholder="Enter Your Name" id="last_name"
                                         class="form-control @error('last_name') is-invalid @enderror" name="last_name"
                                         value="{{ Illuminate\Support\Facades\Auth::user()->last_name }}" required
@@ -50,7 +50,7 @@
 
                                 {{-- Email --}}
                                 <div class="form-group mb-3">
-                                    <label class="mb-2"> Email </label>
+                                    <label class="mb-2"> @lang('public.email') </label>
                                     <input type="email" placeholder="Enter Your Email" id="email"
                                         class="form-control @error('email') is-invalid @enderror" name="email"
                                         value="{{ Illuminate\Support\Facades\Auth::user()->email }}" required
@@ -64,7 +64,7 @@
                                 </div>
                                 {{-- Password --}}
                                 <div class="form-group mb-3">
-                                    <label class="mb-2"> Password </label>
+                                    <label class="mb-2"> @lang('public.password') </label>
                                     <input type="password" placeholder="Enter Your Password" id="password"
                                         class="form-control @error('password') is-invalid @enderror" name="password"
                                         required autocomplete="new-password">
@@ -77,7 +77,7 @@
                                     {{-- Confirm Password --}}
                                 </div>
                                 <div class="form-group mb-3">
-                                    <label class="mb-2"> Confirm Password </label>
+                                    <label class="mb-2"> @lang('public.confirmpassword') </label>
                                     <input type="password" placeholder="Confirm Your Password" id="password-confirm"
                                         class="form-control" name="password_confirmation" required
                                         autocomplete="new-password">
@@ -91,17 +91,17 @@
                                 </div> --}}
                                 {{-- Gender --}}
                                 <div class="form-group mb-3">
-                                    <label class="mb-2"> Gender </label><br>
+                                    <label class="mb-2"> @lang('public.gender') </label><br>
                                     <input type="radio" id="male" name="gender" value="Male">
-                                    <label for="male">Male</label><br>
+                                    <label for="male">@lang('public.male')</label><br>
                                     <input type="radio" id="female" name="gender" value="Female">
-                                    <label for="female">Female</label><br>
+                                    <label for="female">@lang('public.female')</label><br>
                                     <span class="text-danger"></span>
                                 </div>
 
                                 {{-- Role --}}
                                 <div class="form-group mb-3">
-                                    <label class="mb-2"> Role </label>
+                                    <label class="mb-2"> @lang('public.role') </label>
                                     <br>
                                     <select class="form-control" id="role" name="role">
                                         <option selected hidden disabled value="">
@@ -110,7 +110,7 @@
                                 </div>
 
                                 <div class="d-grid mx-auto">
-                                    <button type="submit" class="btn btn-warning">Save</button>
+                                    <button type="submit" class="btn btn-warning">@lang('public.save')</button>
                                 </div>
 
 

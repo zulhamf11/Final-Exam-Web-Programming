@@ -10,17 +10,27 @@
         <div class="container">
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
-                    <a class="nav-link active ms-3" aria-current="page" href="/dashboard">Home</a>
-                    <a class="nav-link active ms-3" aria-current="page" href="#">Cart</a>
-                    <a class="nav-link active ms-3" aria-current="page" href="/profile"">Profile</a>
-                    <a class="nav-link active ms-3" aria-current="page" href="/maintenance">Account Maintenance</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/dashboard">@lang('public.home')</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/cart">@lang('public.cart')</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/profile"">@lang('public.profile')</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/maintenance">@lang('public.maintenance')</a>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            @lang('public.language')
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="locale/en">English</a></li>
 
+                        </ul>
+                    </li>
                 </ul>
 
                 <form action="/logout" method="post">
                     @csrf
                     <button type="submit" class="nav-link active ms-auto mt-3 bg-warning"
-                        aria-current="page">Logout</button>
+                        aria-current="page">@lang('public.logout')</button>
                 </form>
 
             </div>
@@ -40,17 +50,27 @@
         <div class="container">
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
-                    <a class="nav-link active ms-3" aria-current="page" href="/dashboard">Home</a>
-                    <a class="nav-link active ms-3" aria-current="page" href="#">Cart</a>
-                    <a class="nav-link active ms-3" aria-current="page" href="/profile"">Profile</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/dashboard">@lang('public.home')</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/cart">@lang('public.cart')</a>
+                    <a class="nav-link active ms-3" aria-current="page" href="/profile"">@lang('public.profile')</a>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            @lang('public.language')
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="locale/id">Indonesia</a></li>
+                            <li><a class="dropdown-item" href="locale/en">English</a></li>
 
+                        </ul>
+                    </li>
 
                 </ul>
 
                 <form action="/logout" method="post">
                     @csrf
                     <button type="submit" class="nav-link active ms-auto mt-3 bg-warning"
-                        aria-current="page">Logout</button>
+                        aria-current="page">@lang('public.logout')</button>
                 </form>
 
             </div>
