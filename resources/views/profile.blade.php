@@ -12,7 +12,8 @@
                 <div class="col-md-4 mb-5" style="margin-top: 50px; margin-bottom: auto;">
                     <div class="card">
                         <h4 class="card-header text-center bg-warning">@lang('public.profile')</h4>
-                        <img src="" class="card-img-top" alt="...">
+                        <img src="{{ asset('/storage/path-images/' . Illuminate\Support\Facades\Auth::user()->images) }}"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
 
                             <form method="POST" action="/updateprofile/{{ Illuminate\Support\Facades\Auth::user()->id }}">

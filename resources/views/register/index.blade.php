@@ -75,7 +75,7 @@
                                 {{-- Image --}}
                                 <div class="form-group mb-3">
                                     <label class="mb-2">Display Picture</label>
-                                    <input class="form-control" type="file" id="formFile" name="image">
+                                    <input class="form-control" type="file" id="formFile" name="images">
                                     <span class="text-danger"></span>
                                 </div>
                                 {{-- Gender --}}

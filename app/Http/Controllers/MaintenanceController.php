@@ -20,7 +20,7 @@ class MaintenanceController extends Controller
     public function showdata($id){
         $data = User::find($id);
         return view('showdata', [
-            'title' => 'Show Data',
+            'title' => 'Update Role',
         ], compact('data'));
     }
 
