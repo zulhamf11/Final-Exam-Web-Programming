@@ -12,7 +12,7 @@
                                 <img src="{{ $data->image }}" alt="..." style="width: 100%;">
                             </div>
                             <div class="col-md-6 mt-2">
-                                <h2>{{ $data->product_name }}</h2>
+                                <h2>{{ $data->item_name }}</h2>
                                 <table class="table">
                                     <tbody>
                                         <tr>
